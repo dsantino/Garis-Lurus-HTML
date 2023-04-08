@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+  <title>Garis Lurus</title>
+  <style>
+    body{
+      margin: 0px;
+      padding: 0px;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="myCanvas" width="1000" height="500"></canvas>
+  <script>
+    var canvas = document.getElementById('myCanvas');
+    var context = canvas.getContext('2d');
+
+    context.beginPath();
+    context.moveTo(150, 250);
+    context.lineTo(450, 50);
+    context.stroke();
+  </script>
+</body>
+</html>
